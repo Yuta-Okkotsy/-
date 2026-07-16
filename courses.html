@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Курсы — Nur IT</title>
+  <meta name="description"
+    content="Курсы Nur IT: Python, Frontend, Fullstack, аналитика данных, мобильная разработка, UI/UX-дизайн. Длительность, стоимость и запись на обучение.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo"><span class="logo-mark"></span>Nur<span>IT</span></a>
+      <nav class="main-nav">
+        <a href="index.html">Главная</a>
+        <a href="courses.html" class="active">Курсы</a>
+        <a href="about.html">О нас</a>
+        <a href="teachers.html">Преподаватели</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <a href="contacts.html#enroll-form" class="btn btn-primary btn-sm">Записаться</a>
+      </div>
+      <button class="burger" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+    </div>
+    <nav class="mobile-nav">
+      <a href="index.html">Главная</a>
+      <a href="courses.html" class="active">Курсы</a>
+      <a href="about.html">О нас</a>
+      <a href="teachers.html">Преподаватели</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="contacts.html#enroll-form" class="btn btn-primary btn-block">Записаться на курс</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Главная</a> / Курсы</div>
+        <h1 data-animate="1">Курсы Nur IT</h1>
+        <p class="section-sub" data-animate="2">Шесть направлений — от первых строк кода до полноценного портфолио.
+          Выберите курс и запишитесь на бесплатную консультацию.</p>
+      </div>
+    </section>
+
+    <section style="padding-top:0;">
+      <div class="container">
+        <div class="filter-bar" data-animate="1">
+          <button class="filter-chip active" data-filter="all">Все курсы</button>
+          <button class="filter-chip" data-filter="programming">Программирование</button>
+          <button class="filter-chip" data-filter="data">Данные</button>
+          <button class="filter-chip" data-filter="design">Дизайн</button>
+          <button class="filter-chip" data-filter="mobile">Мобильная разработка</button>
+        </div>
+
+        <div class="grid-3">
+
+          <div class="course-card" data-category="programming" data-animate="1">
+            <div class="course-media"><i class="fa-brands fa-python"></i></div>
+            <div class="course-body">
+              <h3>Python для начинающих</h3>
+              <p>Синтаксис Python, структуры данных, ООП и первые прикладные проекты с нуля.</p>
+              <div class="course-meta"><span>Длительность</span><strong>4 месяца</strong></div>
+              <div class="course-price">18 000 сом</div>
+              <div class="course-actions">
+                <button class="btn btn-ghost btn-sm" data-course-detail data-title="Python для начинающих"
+                  data-desc="Синтаксис Python, структуры данных, объектно-ориентированное программирование и работа с базами данных. Курс подходит тем, кто раньше не программировал."
+                  data-duration="4 месяца" data-price="18 000 сом">Подробнее</button>
+                <a href="contacts.html#enroll-form" class="btn btn-primary btn-sm">Записаться</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-card" data-category="programming" data-animate="2">
+            <div class="course-media"><i class="fa-solid fa-laptop-code"></i></div>
+            <div class="course-body">
+              <h3>Frontend-разработка</h3>
+              <p>HTML, CSS, JavaScript и React. Вёрстка адаптивных интерфейсов и работа с API.</p>
+              <div class="course-meta"><span>Длительность</span><strong>5 месяцев</strong></div>
+              <div class="course-price">22 000 сом</div>
+              <div class="course-actions">
+                <button class="btn btn-ghost btn-sm" data-course-detail data-title="Frontend-разработка"
+                  data-desc="HTML, CSS, современный JavaScript и React. Студенты вёрстают адаптивные интерфейсы, подключают API и собирают итоговый проект в портфолио."
+                  data-duration="5 месяцев" data-price="22 000 сом">Подробнее</button>
+                <a href="contacts.html#enroll-form" class="btn btn-primary btn-sm">Записаться</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-card" data-category="programming" data-animate="3">
+            <div class="course-media"><i class="fa-solid fa-server"></i></div>
+            <div class="course-body">
+              <h3>Fullstack-разработка</h3>
+              <p>Frontend + backend на Node.js, базы данных, деплой проектов на сервер.</p>
+              <div class="course-meta"><span>Длительность</span><strong>7 месяцев</strong></div>
+              <div class="course-price">32 000 сом</div>
+              <div class="course-actions">
+                <button class="btn btn-ghost btn-sm" data-course-detail data-title="Fullstack-разработка"
+                  data-desc="Полный цикл разработки веб-приложений: React на клиенте, Node.js и базы данных на сервере, деплой и работа с Git. Для тех, кто хочет стать универсальным разработчиком."
+                  data-duration="7 месяцев" data-price="32 000 сом">Подробнее</button>
+                <a href="contacts.html#enroll-form" class="btn btn-primary btn-sm">Записаться</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-card" data-category="data" data-animate="1">
+            <div class="course-media"><i class="fa-solid fa-chart-line"></i></div>
+            <div class="course-body">
+              <h3>Аналитика данных</h3>
+              <p>Excel, SQL, Python для анализа данных, визуализация и дашборды.</p>
+              <div class="course-meta"><span>Длительность</span><strong>4 месяца</strong></div>
+              <div class="course-price">20 000 сом</div>
+              <div class="course-actions">
+                <button class="btn btn-ghost btn-sm" data-course-detail data-title="Аналитика данных"
+                  data-desc="Работа с Excel и SQL, основы Python для анализа данных, построение дашбордов в Power BI. Курс готовит к позиции junior data analyst."
+                  data-duration="4 месяца" data-price="20 000 сом">Подробнее</button>
+                <a href="contacts.html#enroll-form" class="btn btn-primary btn-sm">Записаться</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-card" data-category="mobile" data-animate="2">
+            <div class="course-media"><i class="fa-solid fa-mobile-screen-button"></i></div>
+            <div class="course-body">
+              <h3>Мобильная разработка (Flutter)</h3>
+              <p>Кроссплатформенные мобильные приложения на Flutter и Dart.</p>
+              <div class="course-meta"><span>Длительность</span><strong>5 месяцев</strong></div>
+              <div class="course-price">24 000 сом</div>
+              <div class="course-actions">
+                <button class="btn btn-ghost btn-sm" data-course-detail data-title="Мобильная разработка (Flutter)"
+                  data-desc="Разработка мобильных приложений для iOS и Android на одном языке — Dart, с использованием Flutter. Курс завершается публикацией приложения."
+                  data-duration="5 месяцев" data-price="24 000 сом">Подробнее</button>
+                <a href="contacts.html#enroll-form" class="btn btn-primary btn-sm">Записаться</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-card" data-category="design" data-animate="3">
+            <div class="course-media"><i class="fa-solid fa-pen-ruler"></i></div>
+            <div class="course-body">
+              <h3>UI/UX-дизайн</h3>
+              <p>Проектирование интерфейсов, прототипирование в Figma, основы дизайн-мышления.</p>
+              <div class="course-meta"><span>Длительность</span><strong>3 месяца</strong></div>
+              <div class="course-price">16 000 сом</div>
+              <div class="course-actions">
+                <button class="btn btn-ghost btn-sm" data-course-detail data-title="UI/UX-дизайн"
+                  data-desc="Основы дизайн-мышления, прототипирование и работа в Figma, создание дизайн-систем. Итог курса — полностью оформленный кейс в портфолио."
+                  data-duration="3 месяца" data-price="16 000 сом">Подробнее</button>
+                <a href="contacts.html#enroll-form" class="btn btn-primary btn-sm">Записаться</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="cta">
+      <div class="container">
+        <div class="card center" data-animate="1" style="padding:56px 40px;">
+          <h2 class="section-title">Не уверены, какой курс выбрать?</h2>
+          <p class="section-sub center">Оставьте заявку — наш куратор поможет подобрать направление по вашим целям и
+            опыту.</p>
+          <a href="contacts.html#enroll-form" class="btn btn-primary">Бесплатная консультация</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo"><span class="logo-mark"></span>Nur<span>IT</span></a>
+          <p style="margin-top:16px;">Учебный центр IT-профессий в Бишкеке. Учим программированию, дизайну и аналитике
+            данных с фокусом на практику.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Навигация</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="courses.html">Курсы</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="teachers.html">Преподаватели</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Курсы</h4>
+          <ul class="footer-links">
+            <li><a href="courses.html">Python</a></li>
+            <li><a href="courses.html">Frontend-разработка</a></li>
+            <li><a href="courses.html">Аналитика данных</a></li>
+            <li><a href="courses.html">UI/UX-дизайн</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Контакты</h4>
+          <ul class="footer-links">
+            <li><i class="fa-solid fa-location-dot"></i> г. Бишкек, ул. Киевская, 107</li>
+            <li><i class="fa-solid fa-phone"></i> +996 700 12 34 56</li>
+            <li><i class="fa-solid fa-envelope"></i> info@nur-it.kg</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Nur IT. Все права защищены.</span>
+        <span>Сайт разработан для учебного центра Nur IT</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="Наверх"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <div class="modal-overlay">
+    <div class="modal">
+      <button class="modal-close" aria-label="Закрыть">&times;</button>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

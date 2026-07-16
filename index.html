@@ -1,11 +1,321 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nur IT — учебный центр IT-профессий в Бишкеке</title>
+    <meta name="description"
+        content="Nur IT — учебный центр IT-профессий. Курсы программирования, дизайна и аналитики данных в Бишкеке. Практика с первого занятия, преподаватели-практики.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
-    <h1>Гондоны</h1>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo"><span class="logo-mark"></span>Nur<span>IT</span></a>
+            <nav class="main-nav">
+                <a href="index.html" class="active">Главная</a>
+                <a href="courses.html">Курсы</a>
+                <a href="about.html">О нас</a>
+                <a href="teachers.html">Преподаватели</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+            <div class="header-actions">
+                <a href="contacts.html#enroll-form" class="btn btn-primary btn-sm">Записаться</a>
+            </div>
+            <button class="burger" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+        </div>
+        <nav class="mobile-nav">
+            <a href="index.html" class="active">Главная</a>
+            <a href="courses.html">Курсы</a>
+            <a href="about.html">О нас</a>
+            <a href="teachers.html">Преподаватели</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="contacts.html#enroll-form" class="btn btn-primary btn-block">Записаться на курс</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="ray-field">
+                <span class="ray" style="left:15%"></span>
+                <span class="ray r2" style="left:45%"></span>
+                <span class="ray r3" style="left:75%"></span>
+            </div>
+            <div class="container hero-grid">
+                <div data-animate="1">
+                    <div class="eyebrow">Учебный центр IT-профессий</div>
+                    <h1>Направь свой путь <em>в IT</em> вместе с Nur IT</h1>
+                    <p>Практические курсы программирования, дизайна и аналитики данных в Бишкеке. Учитесь у практикующих
+                        специалистов и создавайте первые проекты уже на первом месяце.</p>
+                    <div class="hero-actions">
+                        <a href="courses.html" class="btn btn-primary">Смотреть курсы</a>
+                        <a href="contacts.html#enroll-form" class="btn btn-ghost">Записаться на пробное занятие</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div><strong>1200+</strong><span>выпускников</span></div>
+                        <div><strong>87%</strong><span>трудоустроены за 6 мес.</span></div>
+                        <div><strong>12</strong><span>направлений обучения</span></div>
+                    </div>
+                </div>
+                <div class="hero-visual" data-animate="2">
+                    <div class="beam-card card-a">
+                        <div class="code-line w60"></div>
+                        <div class="code-line w80"></div>
+                        <div class="code-line w40 amber"></div>
+                        <div class="code-line w60"></div>
+                        <div class="code-line w80"></div>
+                        <div class="code-line w40"></div>
+                    </div>
+                    <div class="beam-card card-b">
+                        <strong>4.9 / 5</strong>
+                        средняя оценка студентов
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ADVANTAGES -->
+        <section id="advantages">
+            <div class="container">
+                <div class="eyebrow" data-animate="1">Почему Nur IT</div>
+                <h2 class="section-title" data-animate="1">Учебный центр, устроенный вокруг практики</h2>
+                <p class="section-sub" data-animate="2">Мы убрали лишнюю теорию и оставили то, что действительно готовит
+                    к работе в IT-компании.</p>
+                <div class="grid-4">
+                    <div class="card" data-animate="1">
+                        <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>80% практики</h3>
+                        <p>Каждый модуль заканчивается реальным проектом в портфолио.</p>
+                    </div>
+                    <div class="card" data-animate="2">
+                        <div class="card-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                        <h3>Менторы-практики</h3>
+                        <p>Преподают действующие разработчики и дизайнеры из IT-компаний.</p>
+                    </div>
+                    <div class="card" data-animate="3">
+                        <div class="card-icon"><i class="fa-solid fa-briefcase"></i></div>
+                        <h3>Помощь с трудоустройством</h3>
+                        <p>Готовим резюме, портфолио и проводим мок-собеседования.</p>
+                    </div>
+                    <div class="card" data-animate="4">
+                        <div class="card-icon"><i class="fa-solid fa-users"></i></div>
+                        <h3>Мини-группы</h3>
+                        <p>До 12 человек в группе — у каждого хватает внимания ментора.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- POPULAR COURSES -->
+        <section id="popular-courses" style="background:var(--navy-900);">
+            <div class="container">
+                <div class="eyebrow" data-animate="1">Направления</div>
+                <h2 class="section-title" data-animate="1">Популярные курсы</h2>
+                <p class="section-sub" data-animate="2">От первых строк кода до сложных проектов — выберите свой путь.
+                </p>
+                <div class="grid-3">
+
+                    <div class="course-card" data-animate="1">
+                        <div class="course-media"><i class="fa-brands fa-python"></i></div>
+                        <div class="course-body">
+                            <h3>Python для начинающих</h3>
+                            <p>Основы программирования, структуры данных и первые проекты на Python с нуля.</p>
+                            <div class="course-meta"><span>Длительность</span><strong>4 месяца</strong></div>
+                            <div class="course-price">18 000 сом</div>
+                            <div class="course-actions">
+                                <a href="courses.html" class="btn btn-ghost btn-sm btn-block">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-animate="2">
+                        <div class="course-media"><i class="fa-solid fa-laptop-code"></i></div>
+                        <div class="course-body">
+                            <h3>Frontend-разработка</h3>
+                            <p>HTML, CSS, JavaScript и React — от вёрстки до интерактивных интерфейсов.</p>
+                            <div class="course-meta"><span>Длительность</span><strong>5 месяцев</strong></div>
+                            <div class="course-price">22 000 сом</div>
+                            <div class="course-actions">
+                                <a href="courses.html" class="btn btn-ghost btn-sm btn-block">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-animate="3">
+                        <div class="course-media"><i class="fa-solid fa-chart-line"></i></div>
+                        <div class="course-body">
+                            <h3>Аналитика данных</h3>
+                            <p>Excel, SQL, Python для анализа и визуализация данных для бизнес-решений.</p>
+                            <div class="course-meta"><span>Длительность</span><strong>4 месяца</strong></div>
+                            <div class="course-price">20 000 сом</div>
+                            <div class="course-actions">
+                                <a href="courses.html" class="btn btn-ghost btn-sm btn-block">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="center" style="margin-top:44px;">
+                    <a href="courses.html" class="btn btn-primary">Все курсы</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TEACHERS PREVIEW -->
+        <section id="teachers-preview">
+            <div class="container">
+                <div class="eyebrow" data-animate="1">Наставники</div>
+                <h2 class="section-title" data-animate="1">Учат практикующие специалисты</h2>
+                <p class="section-sub" data-animate="2">Преподаватели совмещают работу в IT-компаниях с обучением новых
+                    специалистов.</p>
+                <div class="grid-4">
+                    <div class="card teacher-card" data-animate="1">
+                        <div class="avatar">АБ</div>
+                        <h3>Азамат Беков</h3>
+                        <div class="role">Senior Python-разработчик</div>
+                        <p>7 лет коммерческой разработки, ведёт курс Python и Data Science.</p>
+                    </div>
+                    <div class="card teacher-card" data-animate="2">
+                        <div class="avatar">НТ</div>
+                        <h3>Нурай Токтосунова</h3>
+                        <div class="role">Frontend-разработчик</div>
+                        <p>Работает с React и Vue, ведёт курс Frontend-разработки.</p>
+                    </div>
+                    <div class="card teacher-card" data-animate="3">
+                        <div class="avatar">ЭК</div>
+                        <h3>Эркин Касымов</h3>
+                        <div class="role">UI/UX-дизайнер</div>
+                        <p>Продуктовый дизайнер, автор курса по UI/UX-дизайну.</p>
+                    </div>
+                    <div class="card teacher-card" data-animate="4">
+                        <div class="avatar">ДМ</div>
+                        <h3>Диана Мамбетова</h3>
+                        <div class="role">Data Analyst</div>
+                        <p>Аналитик в финтех-компании, ведёт курс аналитики данных.</p>
+                    </div>
+                </div>
+                <div class="center" style="margin-top:44px;">
+                    <a href="teachers.html" class="btn btn-ghost">Все преподаватели</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section id="testimonials" style="background:var(--navy-900);">
+            <div class="container">
+                <div class="eyebrow center" data-animate="1">Отзывы</div>
+                <h2 class="section-title center" data-animate="1">Что говорят выпускники</h2>
+                <div class="slider" data-animate="2">
+                    <div class="slider-track">
+                        <div class="slider-slides">
+                            <div class="slide">
+                                <p>«До Nur IT я работала в другой сфере. За 5 месяцев курса Frontend собрала портфолио и
+                                    получила первый оффер junior-разработчика.»</p>
+                                <div class="slide-author">
+                                    <div class="avatar">АС</div>
+                                    <div><strong>Айгерим С.</strong><span>Frontend-разработчик</span></div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <p>«Понравилось, что с первой недели пишешь реальный код, а не только слушаешь теорию.
+                                    Преподаватель всегда был на связи.»</p>
+                                <div class="slide-author">
+                                    <div class="avatar">РТ</div>
+                                    <div><strong>Руслан Т.</strong><span>Python-разработчик</span></div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <p>«Курс аналитики данных дал уверенность в SQL и Excel. Уже через месяц после выпуска
+                                    вышла на новую позицию.»</p>
+                                <div class="slide-author">
+                                    <div class="avatar">ЖБ</div>
+                                    <div><strong>Жамиля Б.</strong><span>Data Analyst</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-controls">
+                        <button class="slider-arrow prev" aria-label="Предыдущий отзыв"><i
+                                class="fa-solid fa-chevron-left"></i></button>
+                        <div class="slider-dots"></div>
+                        <button class="slider-arrow next" aria-label="Следующий отзыв"><i
+                                class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section id="cta">
+            <div class="container">
+                <div class="card center" data-animate="1" style="padding:56px 40px;">
+                    <h2 class="section-title">Готовы сделать первый шаг в IT?</h2>
+                    <p class="section-sub center">Запишитесь на бесплатную консультацию — поможем выбрать курс под ваш
+                        уровень и цели.</p>
+                    <a href="contacts.html#enroll-form" class="btn btn-primary">Записаться на обучение</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="logo"><span class="logo-mark"></span>Nur<span>IT</span></a>
+                    <p style="margin-top:16px;">Учебный центр IT-профессий в Бишкеке. Учим программированию, дизайну и
+                        аналитике данных с фокусом на практику.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Навигация</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="courses.html">Курсы</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="teachers.html">Преподаватели</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Курсы</h4>
+                    <ul class="footer-links">
+                        <li><a href="courses.html">Python</a></li>
+                        <li><a href="courses.html">Frontend-разработка</a></li>
+                        <li><a href="courses.html">Аналитика данных</a></li>
+                        <li><a href="courses.html">UI/UX-дизайн</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Контакты</h4>
+                    <ul class="footer-links">
+                        <li><i class="fa-solid fa-location-dot"></i> г. Бишкек, ул. Киевская, 107</li>
+                        <li><i class="fa-solid fa-phone"></i> +996 700 12 34 56</li>
+                        <li><i class="fa-solid fa-envelope"></i> info@nur-it.kg</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Nur IT. Все права защищены.</span>
+                <span>Сайт разработан для учебного центра Nur IT</span>
+            </div>
+        </div>
+    </footer>
+
+    <button class="to-top" aria-label="Наверх"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="js/main.js"></script>
 </body>
+
 </html>
